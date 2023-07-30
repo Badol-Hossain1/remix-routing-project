@@ -1,8 +1,9 @@
-import React from 'react'
+import ExpensesForm from "~/components/expenses/ExpenseForm";
 
 export default function ExpensesAdd() {
   return (
-    <div>expenses.add</div>
-  )
+    <div>
+      <ExpensesForm />
+    </div>
+  );
 }
-  

@@ -1,7 +1,9 @@
-
+import ExpensesForm from "~/components/expenses/ExpenseForm";
 
 export default function ExpensesUpdate() {
   return (
-    <div>expenses.$id</div>
-  )
+    <div>
+      <ExpensesForm />
+    </div>
+  );
 }
