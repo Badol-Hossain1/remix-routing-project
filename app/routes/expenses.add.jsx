@@ -5,3 +5,4 @@ export default function ExpensesAdd() {
     <div>expenses.add</div>
   )
 }
+  

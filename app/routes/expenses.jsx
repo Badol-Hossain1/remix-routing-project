@@ -1,11 +1,13 @@
-import { Outlet } from '@remix-run/react'
-import React from 'react'
+import { Outlet } from "@remix-run/react";
+import expensesStyles from "~/styles/expenses.css";
 
 export default function expenses() {
   return (
     <div>
-
-        <Outlet />
+      <Outlet />
     </div>
-  )
+  );
+}
+export function links() {
+  return [{ rel: "stylesheet", href: expensesStyles }];
 }

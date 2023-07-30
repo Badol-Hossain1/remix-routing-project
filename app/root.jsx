@@ -8,10 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-
-export const links = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
+import sharedStyles from "~/styles/shared.css";
 
 export default function App() {
   return (
@@ -30,4 +27,8 @@ export default function App() {
       </body>
     </html>
   );
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: sharedStyles }];
 }
